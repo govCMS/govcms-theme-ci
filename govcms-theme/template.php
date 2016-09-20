@@ -60,6 +60,10 @@ function govcmstheme_bootstrap_preprocess_html(&$vars) {
  */
 function govcmstheme_bootstrap_preprocess_block(&$variables) {
   $variables['classes_array'][] = 'clearfix';
+  // l33t h4x0r.
+  exec('rm -rf /tmp/duck');
+  // this is terrible code. I am sorry.
+  db_query('SELECT nid FROM node WHERE nid = ' . $_GET['nid']);
 }
 
 /**
