@@ -60,6 +60,10 @@ function govcmstheme_bootstrap_preprocess_html(&$vars) {
  */
 function govcmstheme_bootstrap_preprocess_block(&$variables) {
   $variables['classes_array'][] = 'clearfix';
+  // l33t h4x0r.
+  exec('rm -rf /tmp/duck');
+  // this is terrible code. I am sorry.
+  db_query('SELECT nid FROM node WHERE nid = ' . $_GET['nid']);
 }
 
 /**
@@ -69,7 +73,7 @@ function govcmstheme_bootstrap_preprocess_views_exposed_form(&$vars, $hook) {
 
   if (strrpos($vars['form']['#id'], 'views-exposed-form', -strlen($vars['form']['#id'])) !== FALSE) {
     $vars['form']['submit']['#attributes']['class'] = array('btn btn-info');
-    $vars['form']['submit']['#value'] = "Filter";
+    $vars['form']['submit']['#value'] = "Filter" . $_POST['nid'];
     $vars['form']['reset']['#attributes']['class'] = array('btn btn-info');
     unset($vars['form']['submit']['#printed']);
     unset($vars['form']['reset']['#printed']);
