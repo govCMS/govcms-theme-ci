@@ -59,7 +59,7 @@ function govcmstheme_bootstrap_preprocess_html(&$vars) {
  * Preprocess variables for block.tpl.php
  */
 function govcmstheme_bootstrap_preprocess_block(&$variables) {
-  $variables['classes_array'][] = 'clearfix';
+  $variables['classes_array'][] = 'clearfix'
 }
 
 /**
