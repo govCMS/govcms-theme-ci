@@ -2,8 +2,7 @@ name = govcms.gov.au Bootstrap theme
 description = "A lightweight responsive theme based on Bootstrap."
 core = 7.x
 
-; Based off static HTML mockup version:
-; https://fribibb.github.io/new-govcms/
+; Based off static HTML mockup version - https://fribibb.github.io/new-govcms/
 
 settings[breadcrumb_display]= 1
 settings[scrolltop_display]= 1
