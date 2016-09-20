@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'GovCMS Icons';
+    src: url('govcms-icons.eot?#iefix') format('embedded-opentype'),
+         url('govcms-icons.woff') format('woff'),
+         url('govcms-icons.ttf') format('truetype'),
+         url('govcms-icons.svg#govcms-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: "GovCMS Icons";
+    font-size: 50px
+}
+
+
+.icon-check:before { content: '\e001'; }
+.icon-close:before { content: '\e003'; }
+.icon-help:before { content: '\e004'; }
+.icon-home:before { content: '\e005'; }
+.icon-key:before { content: '\e006'; }
+.icon-laptop-phone:before { content: '\e007'; }
+.icon-lock:before { content: '\e008'; }
+.icon-mail:before { content: '\e00a'; }
+.icon-money:before { content: '\e00c'; }
+.icon-phone:before { content: '\e00e'; }
+.icon-piggy:before { content: '\e00f'; }
+.icon-search:before { content: '\e012'; }
+.icon-twitter:before { content: '\e013'; }
+.icon-rss-square:before { content: '\e014'; }
+.icon-youtube-play:before { content: '\e015'; }
+.icon-external-link:before { content: '\e016'; }
+.icon-bullhorn:before { content: '\e018'; }
+.icon-graduation-hat:before { content: '\e019'; }
+.icon-light-bulb:before { content: '\e01b'; }
+.icon-github-outline:before { content: '\e01d'; }
+.icon-archive:before { content: '\e01f'; }
+.icon-dashboard:before { content: '\e021'; }
+.icon-harddrive:before { content: '\e022'; }
+.icon-stats-up:before { content: '\e024'; }
+.icon-headset:before { content: '\e025'; }
+.icon-shield:before { content: '\e026'; }
+.icon-alert:before { content: '\e027'; }
+.icon-bug:before { content: '\e028'; }
+.icon-package:before { content: '\e029'; }
+.icon-brush:before { content: '\e02a'; }
+.icon-acquia:before { content: '\e02c'; }
+.icon-drupal:before { content: '\e02d'; }
+.icon-aws:before { content: '\e02e'; }
+.icon-facebook:before { content: '\e02f'; }
+.icon-linkedin:before { content: '\e030'; }
+.icon-mail-alt:before { content: '\e031'; }
+.icon-magic-wand:before { content: '\e033'; }
+.icon-stats-up:before { content: '\e034'; }
+.icon-users:before { content: '\e035'; }
+.icon-cog:before { content: '\e036'; }
+.icon-info:before { content: '\e037'; }
+.icon-question:before { content: '\e038'; }
+.icon-github-orig:before { content: '\e039'; }
+.icon-timer:before { content: '\e03a'; }
+.icon-document-doc:before { content: '\e03b'; }
+.icon-document-ppt:before { content: '\e03d'; }
+.icon-document-pdf:before { content: '\e03e'; }
+.icon-chat-speech-bubbles:before { content: '\e03f'; }
+.icon-briefcase:before { content: '\e040'; }
+.icon-open-sign:before { content: '\e041'; }

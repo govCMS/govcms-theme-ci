@@ -1,0 +1,195 @@
+// Responsive Styles
+
+
+@media (min-width:1100px) {
+  //
+}
+
+
+@media (min-width: 994px) {
+  // Only using this on 'desktop' sizes..
+  // as for old browsers? Well.. #aintnobodygottimefordat right now
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
+  .panel-dashed {
+    .panel-body {
+      min-height: 35.9em;
+    }
+  }
+  .logos {
+    .coa-stacked {
+      background: radial-gradient( rgba($aqua,0.6), transparent 50% );
+    }
+  }
+  .split {
+    &.distro .container {
+      background: linear-gradient(90deg, rgba(#fff, .8) 50%, rgba(#f5f7f9, .8) 50%),
+                  url(../img/distro-split.svg) 50% 50% no-repeat;
+    }
+    &.community-support .container {
+      background: linear-gradient(90deg, rgba(#fff, .8) 50%, rgba(#f5f7f9, .8) 50%),
+                  url(../img/community-support-split.svg) 50% 50% no-repeat;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.7em;
+    }
+    .section-one {
+      padding: 50px 80px 50px 0;
+    }
+    .section-two {
+      padding: 50px 0 50px 80px;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  #top-and-first-wrapper {
+    #about {
+      h1,
+      h2 {
+        font-size: 300%;
+      }
+    }
+    .logos {
+      margin: 2em auto 0;
+      width: 22em;
+      float: none;
+    }
+    .nav-pills {
+      float: none !important;
+      margin: 2em auto 0;
+      width: 77%;
+    }
+    small.pull-right {
+      width: 100%;
+    }
+    .btn-lg {
+     float: left !important;
+    }
+  }
+  .split {
+    .container {
+      background: #fff;
+      .section-one {
+        padding-bottom: 1em;
+      }
+      .section-two {
+        text-align: left;
+        padding-top: 0;
+      }
+    }
+    &.testimonial .container {
+      margin: 0;
+      width: 100%;
+      .section-one,
+      .section-two {
+        padding: 10px 20px;
+      }
+      .section-one {
+        margin: 1em 1em 0 1em;
+        &:after {
+          content: none;
+        }
+      }
+      .section-two {
+        margin: 0;
+        img {
+          transform: none !important;
+          margin: 0 10%;
+          max-height: 250px;
+        }
+      }
+    }
+    &.distro .container {
+      background: linear-gradient(90deg, #fff 50%, #fff 50%),
+                  url(../img/distro-split.svg) 50% 55% no-repeat;
+    }
+    &.community-support .container {
+      background: linear-gradient(90deg, #fff 50%, #fff 50%),
+                  url(../img/community-support-split.svg) 50% 55% no-repeat;
+    }
+  }
+  #clients {
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .call-to-action {
+    .text-right .text-right {
+      text-align: center;;
+    }
+  }
+  .alternating {
+    &,
+    .row {
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+    img,
+    i.icon-huge,
+    &.alternating.bg-primary i.icon-huge {
+      display: none !important;
+    }
+    .text-center img {
+      display: inline-block !important;
+      height: auto !important;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+
+@media (max-width:767px) {
+  body.support.front,
+  body.search-results {
+    #top-and-first-wrapper {
+      // jumbo search box
+      .navbar-form {
+        .input-lg {
+          width: 100%;
+          font-size: 128%;
+          padding: 20px 10px;
+          border-top-right-radius: $radius;
+          border-top-left-radius: $radius;
+        }
+        .btn-lg {
+          width: 100%;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: $radius;
+          i {
+            font-size: 250%;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-pills li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .split:not(.testimonial) {
+    margin: 1em;
+  }
+  .call-to-action .btn {
+    margin-right: 0;
+    padding: 10px;
+  }
+  .split.testimonial blockquote {
+    margin: 1em;
+  }
+  footer .small-links li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:285px) {
+  .coa-stacked {
+    display: none;
+  }
+}
