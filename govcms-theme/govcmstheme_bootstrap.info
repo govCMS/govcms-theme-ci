@@ -1,5 +1,5 @@
 name = govcms.gov.au Bootstrap theme
-description = A lightweight responsive theme based on Bootstrap.
+description = "A lightweight responsive theme based on Bootstrap."
 core = 7.x
 
 ; based off static HTML mockup version:
